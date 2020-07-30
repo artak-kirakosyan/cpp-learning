@@ -1,0 +1,18 @@
+
+setlocale - set local formats(in linux russian supported even without setlocale)
+
+code is executed line by line
+// - one line comment
+
+/* */ - multiline comment
+
+
+#include - tell the pre-processor to include library
+it substitutes the code in the library in the place of #include
+
+namespaces - a scope where functions and operators work
+using namespace std - set default namespace to std
+
+if we skip using namespace std, we would need to do std::cout and std::endl
+
+
