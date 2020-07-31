@@ -1,0 +1,26 @@
+
+To print out special characters such as double quotes in a string, or back-slash.
+
+To do so, we use a back-slash. It escapes the next symbol
+
+FOr example to print He\\o, you have to escape the back-slashes
+
+cout << "He\\\\o";
+The first 2 backslashes will print out 1 backslash, the last 2 another one.
+
+If you need double quotes in a string, again escape them
+
+cout << "\"Hello\""; will print out Hello"
+
+Some special characters:
+\n - new line
+\t - tab
+\b - delete last printed symbol
+
+
+Symbols to escape:
+1. "
+2. \
+These are the ones I know so far.
+If you know any new ones, let me know
+
