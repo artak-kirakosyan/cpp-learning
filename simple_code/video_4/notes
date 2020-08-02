@@ -1,0 +1,24 @@
+The data we plan to use in a program are being stored in RAM.
+
+In C++ there are different types of "containers" to store data for proper
+storage and future usage(its hard to store water in a paper box :)
+
+data types:
+1. numerical
+2. symbolic
+3. logical
+
+float 4 bytes - real numbers
+double 8 bytes - real numbers
+
+while numbers:
+int 4 bytes 
+short 4 bytes
+long 4 bytes
+
+symbolic:
+char 1 byte
+
+logical:
+bool 1 byte: true or false
+

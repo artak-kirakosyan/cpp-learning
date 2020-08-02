@@ -1,0 +1,26 @@
+variable: its a chunk of memory in RAM which can store some data and has
+a name associated with it to refer to that memory
+
+to declare a variable we have to tell the compiler the type of the variable 
+and the name as such:
+type name;
+
+If we want to assign an initial value to the variable at the declaration
+we can do so like this:
+type name = initial_value;
+
+If we dont assign an initial value, there might be some garbage value stored in that chunk of memory. It might 
+
+If we need several variables, we can do so:
+int a, b, c;
+this will declare 3 variables.
+
+we can also initialize several variables in one line:
+int a = 1, b = 2, c = 3;
+
+It is usually a good practice to initialize variables. The behavior of the uninitialized variables depends on the compiler you use.
+
+
+Rules in naming variables:
+1. should start with an _ or alphabetic symbol. Can contain alphanumeric and _
+
