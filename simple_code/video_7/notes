@@ -1,0 +1,42 @@
+
+How to insert data into program
+
+There is a command called cin to insert data into program.
+Example:
+we want to square some number, but that number should be given by the user.
+So we ask for a number from the user with cin, and then square and print it out.
+
+
+To confirm the input you have to hit Enter.
+One weird thing is that if you input several values separated by a space, here is what it does:
+
+Lets say your program is asking for 2 numbers:
+int v1, v2;
+
+cout << "enter first: ";
+cin >> v1;
+cout << "enter second: ";
+cin >> v2;
+
+When we excute, it will promtpt "enter first: "
+Now we type "1 2" and then hit enter.
+Instead of asking a second input, the program just prints out the "enter second: "
+and exits.
+
+Probably the reason is that the cin is splitting the input arguments and saving in a queue.
+And once the second cin is asking for an input, the 2 in the queue is getting
+into the variable straight away.
+
+Another weird behavior is when inserting invalid inputs, the program ignores all
+future cin commands and just executes the rest of the code
+example:
+
+cout << "enter numbers:";
+cin >> v1;
+cin >> v2;
+
+cout << "v1=" << v1 << endl;
+cout << "v2=" << v2 << endl;
+
+when executed, if I insert a char and hit enter, instead of being asked for a second
+input, the program is executed to the end and exits.

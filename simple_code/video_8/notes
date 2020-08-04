@@ -1,0 +1,43 @@
+Arithmetic operators
+
+Operator is a character, a symbol that represents some predefined functionality.
+Example: summation +
+         subtraction -
+         division /
+         multiplication *
+         modulus %
+         greater >
+         less  <
+         grater or equal >=
+         less or equal <=
+         and so on
+
+Operators: unary, binary and ternary
+
+There is only 1 ternary operator, will discuss it later
+
+Unary - to operate, we need just one operand
+Binary - 2 operands to function
+Ternary - 3 operands
+
+
+Unary negate operator:
+int a = 4;
+a = -a;
+
+Binary operators:
+int c;
+int a = 1;
+int b = 2;
+c = a + b;
+c = a - b;
+c = a * b;
+c = b / a;
+
+Priority of operators:
+c = a + b*d;
+b*d will be done first, then added to a;
+same as in mathematics
+
+c = (a + b) * d;
+first brackets and then multiplication

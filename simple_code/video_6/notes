@@ -1,0 +1,16 @@
+
+Keyword "const"
+
+Const is a variation of a variable, which should have the same value throughout 
+the whole program
+To declare a constant variable,
+you add a keyword const in the beggining of the variable declaration
+
+
+const int YEAR = 2020
+const float PI = 3.1415
+
+Constant variable should have all capitalized names, its just a convention.
+
+You have to give the value of the constant at the declaration stage.
+
