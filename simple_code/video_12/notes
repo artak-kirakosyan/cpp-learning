@@ -1,0 +1,18 @@
+
+If else
+
+if (logical condition)
+{
+    the code that executes in case of true logical condition.
+}
+else if (another condition)
+{
+    the code that will be executed if the first condition is false, and second is true
+}
+else
+{   
+    the code that executes if non of the above blocks get executed
+}
+
+We can combine as many "else if" statements as we want.
+Only one of the if, else if and else statements will be executed.

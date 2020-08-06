@@ -1,0 +1,36 @@
+
+Increment and decrement
+
+To increase or decrease the value of a variable, we can use multiple approaches:
+a = a + 1;
+a += 1
+a++;
+++a;
+
+same for decrement:
+a = a - 1;
+a -= 1;
+a--;
+--a;
+
+What is special abut this ++ or --
+There are 2 types as we see: prefixed and postfixed:
+
+a++ - postfix
+++a -- prefix
+
+if we just do the increment, no difference
+but if we do this:
+cout << a++ << endl;
+cout << ++a << endl;
+
+In the first case, the old value of the a would be printed, and then the value of the a would be incremented.
+
+But if we do the second way(prefixed)
+then we will increment the value, then print out.
+
+The same applies to decrement.
+
+In case of a mixed operations such as ++a*a++, there is a operator priority, which
+allows the compiler to decide which operation to apply first.
+You can read about it more here: https://ravesli.com/urok-38-prioritet-operatsij-assotsiativnost/

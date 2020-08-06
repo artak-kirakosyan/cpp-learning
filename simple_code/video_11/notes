@@ -1,0 +1,45 @@
+Usually we need to compare some variables to see if they are equal, greater or less. To do so, we have logic operators:
+
+int a = 4;
+int b = 5;
+
+cout << (a < b) << endl;
+This will print 1 as the condition is true.
+
+Logic conditions return boolean type and 0 for false, and 1 for true.
+Logic operators are as follows:
+
+< less than
+> greater than
+>= grater than or equal
+<= less than or equal
+== equality
+!= no equality
+
+
+Be careful: equality is checked by 2 equal signs, as 1 equal sign is the assignment operator.
+
+Be careful: equality is checked by 2 equal signs, as 1 equal sign is the assignment operator.
+
+Logical operators to combine logic statements
+
+&& - and
+|| - or
+! - not
+
+
+!true is false
+true && false - false
+true || false - true
+
+&& and || can be used to combine conditions:
+
+int a = 1;
+int b = 3;
+
+cout << ((a <= 2) && (b > 3)) << endl;
+
+first check if a <= 2, if its true, evaluate the second condition as well then combine the result: true && false -> false.
+
+The operators && and || also have priorities. We can enforce our desired order
+by using () brackets.

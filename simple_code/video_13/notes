@@ -1,0 +1,32 @@
+Switch 
+
+Instead of combining 12 if else statements there is a functionality of
+the switch case.
+Here is how it works
+switch(expression)
+{
+    case value_1:
+        do something;
+        break;
+    case value_2:
+        do_something;
+        break;
+    ...
+    ...
+    ...
+    default:
+        do something;
+        break;
+}
+
+The computer evaluates the expression and starts checking on equality with 
+values specified in cases. Once it is equal, it executes the code under that case, 
+and then executes all below cases without checking on equality.
+To make switch work as a cascade of if statements, we use break after each case.
+That means we will execute one block of case, and then exit the switch block
+(that is what break means).
+
+One thing to note is that default case is optional, we can skip it.
+
+Default is for the case, when non of the cases were executed, then default is being executed
+
