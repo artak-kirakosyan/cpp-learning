@@ -1,0 +1,23 @@
+Loops:
+
+Sometimes we want to repeat certain instruction multiple time, maybe fixed number
+of times, or maybe until some condition is met.
+
+For that purpose there is the concept of the loop
+
+while (condition)
+{
+    block that gets executed
+}
+
+1. check the condition
+2. execute the block
+3. go to 1
+
+Be careful of infinite loops such as:
+
+while (true)
+{
+    cout << 'a' << endl;
+}
+This code will execute forever until killed(CTRL+C)

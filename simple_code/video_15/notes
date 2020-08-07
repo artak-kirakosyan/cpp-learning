@@ -1,0 +1,19 @@
+
+do while
+
+While loop can skip execution straigh away. If the condition is false at the very
+beginning, then the block inside the while wont get executed
+Sometimes we might want the block to be executed at least once.
+Use do while
+
+
+do
+{
+    block of code
+} while (condition);
+
+1. execute the block
+2. check the condition
+3. go to step 1.
+
+as we see, the block will be executed at least once.
