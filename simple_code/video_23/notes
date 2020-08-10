@@ -1,0 +1,27 @@
+Debugging:
+
+No matter what you write, where you write and how you write, you have to know 
+how to use debuggers.
+
+2 types of errors: compile time and runtime
+
+1. compile time: compiler finds issues and refuses to continue and create the executable
+2. runtime error: when the errors were not visible during compilation and show up only
+while execution.
+
+Depending on what OS and environment you work, there are different debuggers.
+
+In Visual Studio, there is a built-in debugger.
+
+In Linux/UNIX if you work with plain terminal, you can use GDB.
+
+What debugger does is that it stops the execution of the program on specific
+breakpoints that you set.
+
+Debugger helps to identify what issues are present in the code, and helps easier
+detect them.
+
+Debuggers allow to execute the code line by line and see the values of variables
+and pointers in real time.
+
+LEARN TO USE DEBUGGER.

@@ -1,0 +1,23 @@
+GOTO
+
+NOTE: do not use goto, or at least avoid using it
+
+We can tell the computer to go to a specific identifier and continue 
+from there
+
+FOr that purpose, we have to create these identifiers and use
+goto identifier; to go there
+
+example:
+
+cout << "A" << endl;
+
+goto link;
+
+cout << "B" << endl;
+
+link:
+cout << "C" << endl;
+
+When executed, this will print out A and C only, as when we encounter the goto
+command, it finds the link identifier and continues execution from there(line 19)

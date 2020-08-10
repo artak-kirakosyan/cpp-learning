@@ -1,0 +1,42 @@
+
+Enclosed loops
+
+Sometimes we might want to iterate over something, while we are
+iterating over something else
+
+to do this, we use enclosed loops.
+
+for (int i = 1; i <= 3; i++)
+{
+    cout << "First loop: " << i << endl;
+    for (int j = 0; j < 3; j++)
+    {
+        cout << "Second loop: " << j << endl;
+    }
+}
+
+This will print out:
+First loop: 1
+Second loop 0
+Second loop 1
+Second loop 2
+
+First loop: 2
+Second loop 0
+Second loop 1
+Second loop 2
+
+First loop: 3
+Second loop 0
+Second loop 1
+Second loop 2
+
+As we see , for each iteration of the first loop, we execute the second loop
+completely
+
+This is a useful architecture for lots of reasons, but also we have to be careful
+as this process can take a loooong time to execute.
+if the first loop has 1000 iterations, and second one has also 1000 iterations,
+the whole program will have to do 1.000.000 iterations. This is very slow.
+
+

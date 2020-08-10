@@ -1,0 +1,21 @@
+For loop
+
+
+for(initialize; condition; changes)
+{
+    block of code
+}
+
+
+Steps:
+1. initialize: create local variables used for iterations
+2. condition: check if true
+3. execute block
+4. changes: any changes to apply
+5. go to step 2
+
+any of the initialize, conditiona and changes are optional:
+
+for(;conditon; changes) - if no initialization needed
+for(initialization;; changes) - if no condition is needed
+for(;;) - infinite loop

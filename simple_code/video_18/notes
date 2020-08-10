@@ -1,0 +1,24 @@
+
+break
+
+sometimes we want to interrupt a loop earlier than specified.
+For that we use the keyword "break".
+for(int i = 0; i < 10; i++)
+{
+    if (i == 5)
+    {
+        break;
+    }
+    cout << i << endl;
+}
+
+Output:
+0
+1
+2
+3
+4
+and that's it: as the break will break the loop
+
+break can be use in for, while and do while loops
+
