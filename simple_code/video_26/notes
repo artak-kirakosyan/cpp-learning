@@ -1,0 +1,14 @@
+Array initializations:
+
+int array[] = {1,2,33,4,};
+
+with this way we can add as many elements as we want.
+
+no need to specify the size of the array.
+
+zero initialization:
+int array[4]{};
+or
+int array[4] = {0};
+or
+int array[4] = {}; 

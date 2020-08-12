@@ -1,0 +1,32 @@
+Arrays
+
+Array - container, that allows to store elements of one specific type
+each element has an index and an array has a name
+
+In memory, elements of the array are stored right next to each other.
+
+when creating an array, we specify the size, and the computer allocates
+proper amount of memory cells to store necessary info
+
+Indexing in c++ starts from 0: third element is at array[2]
+
+How to declare an array:
+
+d_type name[size];
+
+In this case the array will not be initialized.
+To initialize the array during declaration we can do the following:
+
+int name[4] = {1, 2, 3, 4};
+
+we could also do name[1] = 1; name[2] = 2; and so on to initialize after
+declaration.
+
+If we access indexes out of the size of the array, we can encounter a segmentation
+fault(good) or get a random garbage value(bad);
+Getting segmentation fault is good because we know what is wrong and can fix it.
+If we get a random garbage value, we might know know that something is wrong
+and at some point that issue will slap you in the face.
+
+Same when we try to write to the blocks out of the size of the array.
+
