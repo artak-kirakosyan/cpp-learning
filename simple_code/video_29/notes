@@ -1,0 +1,50 @@
+rand srand
+
+Generating random numbers
+Why? - Why not?
+It is useful sometimes
+
+to get random numbers, we use rand function;
+
+int a = rand();
+
+if we run this program again and again, we will get the same numbers.
+
+Not very random right?
+
+It is because these numbers are not random, and their starting point is the same
+every time.
+To solve this is to use srand. this function sets the seed of the random numbers.
+
+srand(10);
+int a = rand();
+
+the problem is still there.
+because every time the seed is 10, which means we still get same numbers every time
+
+to solve this we import ctime module,
+and do the following:
+srand(time(NULL));
+int a = rand();
+
+time returns the number of milliseconds passed from 1970 Jan 1.
+This is the start of the timing in all modern computers
+
+with this way, during every run, the seed will be different.
+
+
+How about the range of the generated numbers
+
+int a = rand() % 10;
+will generate numbers from 0 to 9.
+
+to make it from for example 6 to 9
+we do this
+
+int a = rand() % 4 + 6
+
+%4 will bring the range from 0 to 3,, and +6 will bring it to 6 to 9.
+
+
+Now we can use this approach to fill in an array with random values
+

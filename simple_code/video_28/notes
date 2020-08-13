@@ -1,0 +1,31 @@
+sizeof
+
+This function return the number of bytes that are reserved for that variable, 
+type or anything.
+
+This is useful if we dont know the size of the array, we can do the following
+
+int arr[]{4,5,6};
+
+we dont know the size of this array;
+
+we can use sizeof
+
+const int SIZE = sizeof(arr) / sizeoff(int);
+
+for (int i = 0; i < SIZE; i++)
+{
+
+}
+We should be aware of what type of data the array stores
+
+This approach is not very good one as if we change the type of the array from 
+int to double for example, the code will break.
+
+Instead we can use it like this:
+
+const int SIZE = sizeof(arr) / sizeoff(arr[0]);
+
+This way is better as we use the first element of the array to get the size
+of an element.
+

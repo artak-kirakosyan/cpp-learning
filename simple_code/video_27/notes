@@ -1,0 +1,20 @@
+How to print out array and how to interact with them properly
+
+const int size = 10;
+
+int arr[size];
+
+for (int i = 0; i < size; i++)
+{
+    cout << arr[i];
+}
+
+This is a usual way to iterate over an array.
+It is usually a good practice to keep the size in a constant and use that
+to refer to the size of the array. it is easier and less error prone.
+Remember that indexes are from 0 to size-1, that's why we used for loop with 
+that parameters
+
+We can use this approach to initialize, modify, print and play around with our
+array
+
