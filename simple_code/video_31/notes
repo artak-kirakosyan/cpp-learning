@@ -1,0 +1,13 @@
+Initialize 2D arryas
+
+const int ROW = 3;
+const int COL = 4;
+// or width and height
+
+
+// create a 2D array
+int arr[ROW][COL];
+
+if you want to hand initialize an array, you have to specify the number of
+columns.
+

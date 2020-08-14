@@ -1,0 +1,39 @@
+Functions
+
+Separate a reusable part of a code which may accept some arguments, does some
+operations and may return some results.
+
+an example is the rand, srand, time.
+
+good example of using function is when you want to print out an array.
+instead of rewriting that part of the code again and again, we can define a function
+and call it every time we want.
+
+function definition:
+
+return_type name_of_function (arg_type arg_name, arg_type arg_name_2,...)
+{
+    function body;
+}
+
+if you dont want to return anything, you specify void as the return type
+
+same for arguments. if no arguments, specify void in arguments field
+
+
+It is important to define the function before calling it.
+
+C++ allows to define a prototype of a function, and then implement it.
+
+With that way you tell the compiler: hey this is the function, I am going to 
+define it later, just dont panik okay?
+And the compiler will shut up for a moment(untill it finds out you forgot to 
+implement your function)
+
+exaple:
+
+int sum_num(int a, int b)
+{
+    return a + b;
+}
+

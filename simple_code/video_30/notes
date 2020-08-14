@@ -1,0 +1,10 @@
+Two-dimensional arrays.
+
+What are two dimensional arrays?
+well, its an array that has 2 dimensions.
+Basically it is an array elements of which are themselves arrays.
+
+As this is not an intro to programming, but intro to c++, we will skip over
+the too basic details about how it works.
+
+
