@@ -1,0 +1,23 @@
+Inline
+
+inline is a kind of recommendation to the compiler.
+
+int Sum(int a, int b)
+{
+    return a + b;
+}
+
+If we use this function, when the execution line reaches the function call,
+the executor is looking to find where the function is stored, it passes arguments
+and returns the result.
+
+That takes some time.
+
+But we we put hte keyword inline in front of the function prototype,
+the compile will put the procedure happening inside the function right in the
+execution flow.
+That means the instructions wont include calling a separate function.
+
+as stated above, this is a recommendation rather than a command to the compiler
+that means the compiler will decide for itself to do or not to do.
+

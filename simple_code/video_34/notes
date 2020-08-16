@@ -1,0 +1,54 @@
+Passing arguments to a function.
+
+As we know, to do some processing, usually we need some input arguments
+
+void foo(int a)
+{
+    a++;
+}
+
+int main()
+{
+    int q = 3;
+    foo(q);
+}
+If we print out the value of our variable after increment in function and after
+function is finished, we will see 4, and then 3.
+
+The reason is that these variables are passed by value, which means the value 
+of the q will be passed to a newly created variable a, which would change its value
+to 4, but the value of the original q wont be changed as it is saved in a different
+place in memory.
+
+There are 2 other types: pass by reference and pass by value.
+We will get back to it later
+
+If we want to change the value of our variable we have to do this:
+
+int foo(int a)
+{
+    return a++;
+}
+
+int main()
+{
+    int q = 3;
+    q = foo(q);
+    cout << q << endl;
+}
+
+We might expect to have q = 4 now, but the a++ is working as follows:
+
+first the value of a becomes 4, but the a++ operator returns the previous value of the a.
+which means we still return 3.
+
+To make the q change, we have to use return ++a; or store the new value in a 
+different variable and return that one as follows:
+
+int foo(int a)
+{
+    int n = a + 1;
+    return a;
+}
+
+

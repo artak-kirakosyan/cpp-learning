@@ -1,0 +1,30 @@
+Default values for arguments in functions
+
+
+When you define a function, to specify a list of arguments with their types.
+
+If you want, you can also specify default values for these arguments.
+This means that if you quite often use the same value for some argument, you
+can add that as a default value to your function definition and skip passing
+in that argument
+
+
+void foo(int a = 5)
+{
+    for (int i = 0; i < a; i++)
+    {
+        cout << "#"" << endl;
+    }
+}
+
+int main()
+{
+    foo(3); // print out 3 #
+    foo(); // print out 5 # as it is the default
+}
+
+One thing to note is that parameters with default values have to be specified 
+in the end.
+void foo(int a = 5, int b) <-- not allowed
+
+void foo(int b, int a= 5) <-- correct

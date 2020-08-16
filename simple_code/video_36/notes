@@ -1,0 +1,21 @@
+Function prototypes
+
+We have to define the functions before using them
+
+so if you want to define a helper function and use it in the main, we have to 
+put it above the main.
+This is because the compiler is reading the code from top to bottom.
+
+
+but if you add several functions, the main will be lost in the end of the file
+and wont be easy to read.
+
+To workaround this is to define a prototype of a function above main, then 
+write its implementation below
+
+
+the prototype is:
+return_type func_name(argument_type arg_name, ...);
+
+Dont forget the semicolon
+

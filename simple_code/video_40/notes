@@ -1,0 +1,44 @@
+Overloading a function
+
+
+sometimes we need to have a function that would be able to accept different
+types of input args.
+example:
+
+int Sum(int a, int b)
+{
+    return a + b;
+}
+
+But what if I want to add a real number to a real number?
+we can add another definition of the same function but with different 
+argument set and return args
+
+
+int Sum(int a, int b)
+{
+    return a + b;
+}
+
+double Sum(double a, double b)
+{
+    return a + b;
+}
+
+Now we can call the function for double and int types.
+
+We can overload functions not only to change the argument type and return type
+but also number of arguments
+
+int Sum(int a, int b, int c)
+{
+    return a + b + c;
+}
+
+Note that if I put a default value for the last argument, and call the Sum
+with 2 arguments, the compiler would yell at us and say hey, which one you want?
+
+In case of any ambiguity, the compiler would yell at us
+
+Of course it is up to you want logic to implement inside the different overloaded
+functions.

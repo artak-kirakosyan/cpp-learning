@@ -1,0 +1,40 @@
+Scopes of visibility
+
+
+In c++ , the curly braces define a block, and if you define something in that
+block, that thing is not visible outside the block.
+
+if (true)
+{
+    int a = 1;
+}
+
+cout << a;
+
+This wont work as the variable a does not exist in the outter scope.
+
+If you have enclosed blocks, the reference resolver would first search the current
+block, if it doesnt find anything, it will search the outter scope and go up, up
+until it reaches the global scope.
+
+blocks can be defined even without any condition or function:
+
+{
+    int a = 1;
+}
+cout << a;
+
+this wont work for the same reason as previously.
+
+Global variables are defined in the global scope(not in any block, just above the
+main)
+
+Globl variables are being initialized to default values(0 for int, 0.0 for float
+and double, false for bool)
+
+Global variables are accessible from any scope and you have to be very careful
+with working with them.
+
+If define a local variable with the same name a global variable, the local variable
+will be accessed and global variable wont be accessible anymore.
+

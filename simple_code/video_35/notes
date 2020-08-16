@@ -1,0 +1,60 @@
+Passing array to a function.
+
+say we want to pass an array to a function which would print out that array.
+to make things more complicated, we create 2 functions, one to fill in values, 
+another to print it out.
+
+void fillArray(int arr[], const int size)
+{
+    for (int i = 0; i < size, i++)
+    {
+        arr[i] = rand() % 30;
+    }
+}
+
+
+void print_arr(int arr[], const int size)
+{
+    
+    for (int i = 0; i < size, i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+
+int main()
+{
+    const int SIZE = 10;
+    int arr[SIZE];
+}
+
+we might say that: "hey but you dont return anything, the initial array wont
+be modified".
+that's not the case as the array is being passed by pointer, which means instead
+of passing the whole array to the function, we just pass the address of the 
+first element.(we will discuss this in details later)
+
+It is good to pass the size of the array, but as we remember(video 28) we
+could have used the sizeof to detect the size in the function.
+that's not going to work
+here is why:
+
+void check_size(int arr[])
+{
+    cout << sizeof(arr) << endl;
+}
+
+int main()
+{
+    int arya[10];
+    cout << sizeof(arya) << endl;
+    check_size(arya);
+}
+
+we might expect to see the same size because its the same array, but actually
+in the function, we just have the pointer to the first element of the array, 
+not the whole array that's why the sizeof would show us the size of 1 pointer,
+not the whole array.
+
