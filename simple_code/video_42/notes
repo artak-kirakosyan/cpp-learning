@@ -1,0 +1,20 @@
+
+Stack.
+
+What is stack?
+
+Stack is a segment in the memory.
+
+Stack is last input, first output(LIFO) structure.
+The best stack example: you wash the plates and put them one on top of the other.
+When you need a plate, which one you take first? exactly: the one that was put
+there the last.
+
+The same is related to C++.
+When you call a function which calls another function and so on, 
+each function is placed in a stack, and when its executes is done, it is removed
+from the stack.
+
+If you place too many function calls in the stack, and you run out of stack
+memory, you will have stackoverflow error
+

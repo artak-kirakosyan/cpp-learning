@@ -1,0 +1,50 @@
+Template functions
+
+
+Ae saw in previous video, we can implement the same function multiple times
+for different argument sets and return types
+
+This is good, but we cant define the function for all new types we define.
+To workaround this, there is an idea of templates.
+
+Lets see what that is on the example of the summation
+
+
+template <typename T>
+T Sum(T a, T b)
+{
+    return a + b;
+}
+
+typename T - we say that no matter what you accept, just keep the name of that
+type in T. That is why the return type and types of a and b are all T.
+
+If we call this function for 2 integers, the T would represent int and the function
+will just add 2 integers
+
+Now Sum(1, 2) and Sum(1.2, 3.5) would both work
+
+However Sum(1, 1.2) wont work as T cant be both int and double.
+
+Instead we can do the following
+
+template <typename T1, typename T2>
+T1 Sum(T1 a, T2 b)
+{
+    return a + b;
+}
+
+Now this will work for Sum(1, 1.2) and Sum(1.2, 1)
+However the result would be different as the first one will return an int(2)
+the second one a double(2.2).
+
+Instead of typename we can also write class
+
+template <class T>
+
+this is the same typename, but typename is coming from C.
+
+But dont mix the typename and class in one function definition
+Advanced: actually they are not the same, in some cases you have to use one
+or the other, but its too early to talk about this
+

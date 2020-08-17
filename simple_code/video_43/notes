@@ -1,0 +1,13 @@
+Recursion
+
+void Foo()
+{
+    Foo();
+}
+
+Foo();
+
+This is the most basic example of recursion, a function calls itself.
+This is not very useful because we are going to have stackoverflow as the function
+call is not being over and it is calling another function.
+
