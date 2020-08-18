@@ -1,0 +1,23 @@
+Dynamic memory(heap)
+
+to study pointers and references, we need to understad static and dynamic
+memory
+
+When we execute our program, the computer knows how much memory the
+arrays and variables need. So it allocates some amount of memory to store
+all these things.
+
+If we want to, we can ask for additional memory as we might not know in advance
+what amount of memory we will be needing.
+
+example: we read information from DB, we dont know how much info there is.
+
+In c++, if we ask the computer to give us a bit more dynamic memory in RAM,
+we have to clean that memory after using it as c++ does NOT clean after you.
+If your program works for a while and does not clean, but keeps asking for more
+and more memory, it will eventually crash as you will run out of memory.
+
+that's why c++ is considered a low level programming language compared to 
+for example c# or java, it allows more control and more opportunites in work 
+with memory and surrounding environment.(it doesnt mean c++ is better than java
+or c# as doing stuff in c++ is harder)

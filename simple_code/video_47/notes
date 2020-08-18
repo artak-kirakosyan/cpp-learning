@@ -1,0 +1,35 @@
+Pointer arithmetics
+
+Spoiler alert: the name of the array is a pointer to the first element
+in the array.
+
+when we write arr[0] this tells the computer to take the value written in the
+addess block of the arr.
+arr[i] means take the (i+1)-th element(zero indexing)
+starting counting from the arr memory block
+
+-----------------------------------------
+|      |      |      |      |     |     |  
+|      |      |      |      |     |     |
+|      |      |      |      |     |     |
+-----------------------------------------
+0x1     0x2    0x3    0x4    0x5   0x6
+ ^
+/ \ 
+ |
+ |
+arr[0] arr[1] arr[2] arr[3] arr[4] arr[5]
+arr    arr+1   arr+2  arr+3  arr+4 arr+5
+
+if we create an array of size 6, this is the picture we will have in memory.
+
+It is important to understand that pointer is just a number in base 16.
+So if you add 1 to the arr, you get a number by 1 bigger, which would point to 
+the memory address right next to the initial block.
+
+when we are accessing array elements by square brackets, it is equivalent
+to doing arr[i] is the same as *(arr+i).
+
+We are dereferencing the i-th block of the memory starting counting from the
+memory block pointed by arr.
+

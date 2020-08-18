@@ -1,0 +1,56 @@
+Pointers.
+
+
+Pointers are variables which store the memory address of another variable
+or an object
+
+previously, if we did this:
+int a = 5;
+int b = a;
+
+b would have the same value as a, but if we were to change the b, a wont be 
+affected as it was stored in a different place in memory.
+Both a and b had the same value but that value was stored in 2 different places
+
+But if we do like this:
+
+int a = 5;
+
+int * ptr = &a;
+
+this means in some memory address we store value 5.
+
+In another memory address, we store the address where the 5 is stored.
+The ampersand operator tell the computer to return the address of the variable
+a.
+
+* operator tells the compiler that we want a pointer, and int means that the
+pointer is pointing to an integer.
+
+now if we were to print out the ptr, a random 16-base number would be printed
+out. This is because the memory addresses are stored as 16 base numbers.
+
+To access the value of a using the pointer, we use dereferencing:
+*ptr = 10;
+this will change the value of the a to 10 as *ptr is asking to take the value,
+that is stored in the pointer(the memory address of a) and go there.
+
+then we write 10 in that address(which was the address where a was stored).
+
+  
+
+------------
+|    a     |
+|    5     |
+------------
+0x12345
+^
+|
+|
+-----------
+|   p     |
+| 0x12345 |
+-----------
+0x47687
+
+

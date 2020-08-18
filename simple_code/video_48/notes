@@ -1,0 +1,18 @@
+Passing arguments to the function by pointer.
+
+As we remember, if we pass an integer to a function, which increments the value
+of that integer, when we come back to main, the value of the integer was not 
+affected(varible scopes)
+
+to change the value, we were forced to return the new value from the function
+and assign the returned value to our integer.
+
+Now, we can do it easier using pointers.
+as we remember, when we pass an array to a function, modify the array in the
+function and then print out the array in main, we see that it changed its value
+that is because array's name is a pointer, and arrays are being passed by pointer
+and when we modify the value of elements in the function, we write the new 
+values in the same address where the array is stored.
+that is why the changes are preserved
+
+

@@ -1,0 +1,5 @@
+returning multiple values from a function using pointers.
+
+The example in this folder shows how we can pass several values and
+get multiple results(stupid method from my opinion).
+
